@@ -36,12 +36,12 @@ export default function App() {
         // Auto-check if static PDF file was provided in repo (e.g. in main/ or public/)
         let staticPdfResult: { dataUrl: string; fileName: string } | null = null;
         try {
-          const targetName = '2026_Targi_MAPIC_GuestBook_Adal_02_Formularz.pdf';
+          const targetName = '2026_Perfect_Targi_MAPIC_GuestBook_01_Formularz_ENG.pdf';
           const candidateNames = [
             targetName,
             'formularz.pdf',
             'template.pdf',
-            'Adal_Guest_Book_2026_MAPIC.pdf',
+            'Perfect_Guest_Book_2026_MAPIC.pdf',
           ];
           const prefixes = [
             './main/',
