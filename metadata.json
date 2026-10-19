@@ -1,0 +1,6 @@
+{
+  "name": "formularz pdf adal",
+  "description": "Formularz PDF Adal Guest Book 2026 - szybkie wypełnianie na tablecie, zapis na dysku oraz wysyłka e-mailem.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
