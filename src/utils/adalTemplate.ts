@@ -62,7 +62,7 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Nazwa firmy (Company Name)',
       page: 1,
       x: 57.7,
-      y: 28.8,
+      y: 26.8,
       width: 33.5,
       height: 2.6,
       placeholder: 'Nazwa firmy',
