@@ -11,13 +11,13 @@ export function getAdalDefaultFields(): FormField[] {
     {
       id: 'p1_project_box',
       type: 'signature', // allows tablet pen/finger drawing & sketch
-      label: 'Szkic / Notatka projektu (PROJECT)',
+      label: 'Sketch / Project note (PROJECT)',
       page: 1,
       x: 47.0,
       y: 4.2,
       width: 42.5,
       height: 18.2,
-      placeholder: 'Kliknij lub użyj rysika / palca, aby naszkicować projekt...',
+      placeholder: 'Click or use a stylus or your finger to sketch your design...',
     },
     // Date
     {
@@ -26,10 +26,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Data (Date)',
       page: 1,
       x: 15.3,
-      y: 24.5,
+      y: 24.7,
       width: 23.3,
       height: 2.6,
-      placeholder: 'np. 04.11.2026',
+      placeholder: 'e.g. 04.11.2026',
     },
     // Contact Person
     {
@@ -38,10 +38,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Osoba kontaktowa (Contact Person)',
       page: 1,
       x: 54.0,
-      y: 24.5,
+      y: 24.7,
       width: 35.5,
       height: 2.6,
-      placeholder: 'Imię i nazwisko',
+      placeholder: 'Name and Surname',
     },
     // Country
     {
@@ -50,10 +50,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Kraj (Country)',
       page: 1,
       x: 18.0,
-      y: 28.5,
+      y: 28.8,
       width: 24.0,
       height: 2.6,
-      placeholder: 'np. Polska / France',
+      placeholder: 'e.g. Poland / France',
     },
     // Company Name
     {
@@ -62,10 +62,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Nazwa firmy (Company Name)',
       page: 1,
       x: 57.7,
-      y: 28.5,
+      y: 28.8,
       width: 31.8,
       height: 2.6,
-      placeholder: 'Nazwa firmy',
+      placeholder: 'Name of company',
     },
     // Email
     {
@@ -74,7 +74,7 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'E-mail',
       page: 1,
       x: 15.8,
-      y: 32.5,
+      y: 32.8,
       width: 33.3,
       height: 2.6,
       placeholder: 'jan@firma.pl',
@@ -86,7 +86,7 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Telefon (Phone)',
       page: 1,
       x: 57.0,
-      y: 32.5,
+      y: 32.8,
       width: 32.4,
       height: 2.6,
       placeholder: '+48 600 000 000',
@@ -142,10 +142,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Adress line 1',
       page: 1,
       x: 22.1,
-      y: 40.5,
+      y: 40.8,
       width: 67.4,
       height: 2.6,
-      placeholder: 'Ulica, numer lokalu...',
+      placeholder: 'Street, flat number…',
     },
     // Adress line 2
     {
@@ -154,10 +154,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Adress line 2',
       page: 1,
       x: 22.1,
-      y: 44.5,
+      y: 44.8,
       width: 67.4,
       height: 2.6,
-      placeholder: 'Kod pocztowy, miasto...',
+      placeholder: 'Postcode, town...',
     },
     // Are you interested in seasonal decorations?: Yes
     {
@@ -276,10 +276,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Preferred time period',
       page: 1,
       x: 40.0,
-      y: 58.0,
+      y: 59.43,
       width: 49.5,
       height: 2.5,
-      placeholder: 'np. Wiosna 2027 / Q2',
+      placeholder: 'e.g. Spring 2027 / Q2',
     },
     // Page 1 Notes / Project Ideas textarea
     {
@@ -291,7 +291,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 66.5,
       width: 79.5,
       height: 25.5,
-      placeholder: 'Wpisz notatki i pomysły projektowe klienta...',
+      placeholder: 'Enter the client’s notes and design ideas...',
       fontSize: 12,
       lineHeight: 1.35,
     },
@@ -309,7 +309,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 15.0,
       width: 79.5,
       height: 36.5,
-      placeholder: 'Dodatkowe szczegółowe notatki, ustalenia techniczne, szkice...',
+      placeholder: 'Additional detailed notes, technical specifications, sketches...',
       fontSize: 12,
       lineHeight: 1.35,
     },
@@ -320,10 +320,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Project Budget',
       page: 2,
       x: 23.5,
-      y: 56.5,
+      y: 57,
       width: 66.0,
       height: 2.6,
-      placeholder: 'np. 50 000 EUR',
+      placeholder: 'e.g. 50 000 EUR',
     },
     // Deadline
     {
@@ -332,10 +332,10 @@ export function getAdalDefaultFields(): FormField[] {
       label: 'Deadline',
       page: 2,
       x: 19.0,
-      y: 60.8,
+      y: 61.05,
       width: 70.5,
       height: 2.6,
-      placeholder: 'np. Listopad 2026',
+      placeholder: 'e.g. November 2026',
     },
     // Sales Season: Q1
     {
@@ -424,7 +424,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 67.8,
       width: 29.0,
       height: 3.4,
-      placeholder: 'Opis innego typu...',
+      placeholder: 'Description of another type...',
     },
     // Project Type: Event
     {
@@ -520,7 +520,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 79.2,
       width: 29.0,
       height: 3.2,
-      placeholder: 'Wpisz np. 1: Quality, 2: Design',
+      placeholder: 'e.g. 1: Quality, 2: Design',
     },
     // Survey Row 2 Checkboxes
     {
@@ -583,7 +583,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 83.8,
       width: 29.0,
       height: 3.2,
-      placeholder: 'Wpisz uwagi / ranking...',
+      placeholder: 'Enter comments / rating...',
     },
     // Survey Row 3 Checkboxes
     {
@@ -646,7 +646,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 88.4,
       width: 29.0,
       height: 3.2,
-      placeholder: 'Wpisz uwagi / propozycje poprawy...',
+      placeholder: 'Enter comments / suggestions...',
     },
   ];
 }
@@ -656,7 +656,7 @@ export function createAdalGuestBookTemplate(): FormTemplate {
   return {
     id: ADAL_TEMPLATE_ID,
     name: 'GUEST BOOK 2026 - MAPIC (Adal decorations)',
-    description: 'Jedyny oficjalny formularz targowy Adal decorations: 2 strony A4 z polami projektu, notatkami, budżetem i ankietą.',
+    description: 'The only official Adal Decorations trade fair form: 2 A4 pages with sections for the design, notes, budget and a questionnaire.',
     fileName: '2026_Targi_MAPIC_GuestBook_Adal_02_Formularz.pdf',
     pageCount: 2,
     pageAspectRatios: [1.4142, 1.4142], // Standard A4 ratio (297mm / 210mm)
