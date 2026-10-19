@@ -41,7 +41,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 24.7,
       width: 32.5,
       height: 2.6,
-      placeholder: 'Name and Surname',
+      placeholder: 'Imię i nazwisko',
     },
     // Country
     {
@@ -65,7 +65,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 28.8,
       width: 33.5,
       height: 2.6,
-      placeholder: 'Name of company',
+      placeholder: 'Nazwa firmy',
     },
     // Email
     {
@@ -145,7 +145,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 40.8,
       width: 71.5,
       height: 2.6,
-      placeholder: 'Street, flat number…',
+      placeholder: 'Ulica, numer mieszkania…',
     },
     // Adress line 2
     {
@@ -157,7 +157,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 44.8,
       width: 71.5,
       height: 2.6,
-      placeholder: 'Postcode, town...',
+      placeholder: 'Kod pocztowy, miasto...',
     },
     // Are you interested in seasonal decorations?: Yes
     {
@@ -279,7 +279,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 59,
       width: 53.5,
       height: 2.5,
-      placeholder: 'e.g. Spring 2027 / Q2',
+      placeholder: 'np. Wiosna 2027 / Q2',
     },
     // Page 1 Notes / Project Ideas textarea
     {
@@ -291,7 +291,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 66.5,
       width: 79.5,
       height: 25.5,
-      placeholder: 'Enter the client’s notes and design ideas...',
+      placeholder: 'Wprowadź uwagi klienta i pomysły projektowe...',
       fontSize: 12,
       lineHeight: 1.35,
     },
@@ -309,7 +309,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 15.0,
       width: 79.5,
       height: 36.5,
-      placeholder: 'Additional detailed notes, technical specifications, sketches...',
+      placeholder: 'Dodatkowe szczegółowe uwagi, dane techniczne, szkice...',
       fontSize: 12,
       lineHeight: 1.35,
     },
@@ -323,7 +323,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 56.7,
       width: 65.0,
       height: 2.6,
-      placeholder: 'e.g. 50 000 EUR',
+      placeholder: 'np. 50 000 EUR',
     },
     // Deadline
     {
@@ -335,7 +335,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 60.7,
       width: 72.5,
       height: 2.6,
-      placeholder: 'e.g. November 2026',
+      placeholder: 'np. Listopad 2026',
     },
     // Sales Season: Q1
     {
@@ -424,7 +424,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 67.8,
       width: 22.0,
       height: 3.4,
-      placeholder: 'Description of another type...',
+      placeholder: 'Opis innego typu...',
     },
     // Project Type: Event
     {
@@ -520,7 +520,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 79.2,
       width: 29.0,
       height: 3.2,
-      placeholder: 'e.g. 1: Quality, 2: Design',
+      placeholder: 'np. 1: Quality, 2: Design',
     },
     // Survey Row 2 Checkboxes
     {
@@ -583,7 +583,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 83.8,
       width: 29.0,
       height: 3.2,
-      placeholder: 'Enter comments / rating...',
+      placeholder: 'Wpisz komentarz / ocenę...',
     },
     // Survey Row 3 Checkboxes
     {
@@ -646,7 +646,7 @@ export function getAdalDefaultFields(): FormField[] {
       y: 88.4,
       width: 29.0,
       height: 3.2,
-      placeholder: 'Enter comments / suggestions...',
+      placeholder: 'Wpisz komentarze / sugestie...',
     },
   ];
 }
@@ -656,7 +656,7 @@ export function createAdalGuestBookTemplate(): FormTemplate {
   return {
     id: ADAL_TEMPLATE_ID,
     name: 'GUEST BOOK 2026 - MAPIC (Adal decorations)',
-    description: 'The only official Adal Decorations trade fair form: 2 A4 pages with sections for the design, notes, budget and a questionnaire.',
+    description: 'Formularz targowy Adal Decorations: 2 strony formatu A4 z sekcjami przeznaczonymi na projekt, uwagi, budżet oraz kwestionariusz.',
     fileName: '2026_Targi_MAPIC_GuestBook_Perfect_PL_Formularz.pdf',
     pageCount: 2,
     pageAspectRatios: [1.4142, 1.4142], // Standard A4 ratio (297mm / 210mm)
