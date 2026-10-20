@@ -16,6 +16,40 @@
   <body class="bg-stone-100 text-stone-900 antialiased selection:bg-amber-500/20">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+  // 1. Blokowanie tworzenia nowych ciasteczek (Cookies)
+  Object.defineProperty(document, 'cookie', {
+    get: function() { return ''; },
+    set: function() { return true; }, // Ignoruje próby zapisu
+    configurable: false
+  });
+
+  // 2. Automatyczne czyszczenie starych ciasteczek przy każdym ładowaniu
+  function wyczyscCookies() {
+    const cookies = document.cookie.split(";");
+    for (let i = 0; i < cookies.length; i++) {
+      const cookie = cookies[i];
+      const eqPos = cookie.indexOf("=");
+      const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+    }
+  }
+
+  // 3. Blokowanie i czyszczenie pamięci lokalnej (Local / Session Storage)
+  // Przydatne, jeśli aplikacja React/Vite próbuje tam zapisywać ustawienia
+  try {
+    window.localStorage.clear();
+    window.sessionStorage.clear();
+    
+    // Nadpisujemy metody, aby nic nie dało się zapisać
+    Storage.prototype.setItem = function() { console.log('Zablokowano zapis w Storage'); };
+  } catch (e) {
+    console.log('Pamięć Storage jest już zablokowana przez przeglądarkę');
+  }
+
+  // Uruchomienie czyszczenia na starcie
+  wyczyscCookies();
+</script>
   </body>
 </html>
 
