@@ -21,5 +21,25 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+      <script>
+      // 1. Wyczyszczenie i zablokowanie pamięci podręcznej Cache API
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (let name of names) caches.delete(name);
+        });
+      }
+
+      // 2. Agresywny skrypt usuwający dane z dysku przy opuszczaniu strony
+      window.addEventListener('unload', function() {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for (let registration of registrations) {
+              registration.unregister();
+            }
+          });
+        }
+      });
+    </script>
+
 </html>
 
